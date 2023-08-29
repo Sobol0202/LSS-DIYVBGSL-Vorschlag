@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS DIY-VBGSL Vorschlag
 // @namespace    www.leitstellenspiel.de
-// @version      1.3
+// @version      1.4
 // @description  Gibt einen Vorschlag für eine VBGSL innerhalb eines einstellbaren Bereichs aus
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/
@@ -121,7 +121,7 @@
                 const randomPlaceName = dataRandom.address.village || dataRandom.address.town || dataRandom.address.city || dataRandom.address.hamlet || "Unbekannter Ort";
 
                 const randomKeyword = getRandomKeyword();
-                const randomNumber = getRandomNumber(0, 200);
+                const randomNumber = getRandomNumber(0, 100);
                 //Ergebnis anzeigen
                 const resultElement = document.createElement("p");
                 resultElement.textContent = `Einsatzvorschlag: ${randomPlaceName}, ${randomKeyword}, ${randomNumber} Patienten`;
